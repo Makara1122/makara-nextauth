@@ -1,4 +1,4 @@
-import ImageComponent from "@/components/images/image";
+import ImageComponent from '@/components/images/Image';
 import styles from './style.module.css'
 import { inter,suwannaphum } from '@/app/fonts'
 export default function Home() {
