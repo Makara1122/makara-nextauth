@@ -1,9 +1,21 @@
 import ImageComponent from '@/components/images/Image';
 import styles from './style.module.css'
 import { inter,suwannaphum } from '@/app/fonts'
+import { Metadata } from 'next';
+
+//  this is metadata 
+export const metadata: Metadata = {
+  title: "Toyota Super Car",
+  description: "Makara bought yesterday 100 000$",
+  openGraph : {
+    images : "https://i.pinimg.com/564x/c2/3d/79/c23d79d6061a7a0920b8f6fb4f6788a0.jpg"
+  }
+};
+
 export default function Home() {
   return (
-    <main className={`${styles.container} ${suwannaphum.className} ${inter.className}`}>
+  <>
+  <main className={`${styles.container} ${suwannaphum.className} ${inter.className}`}>
       <section className={styles.flexContainer}>
       <div className="md:shrink-0  ">
         <ImageComponent />
@@ -21,5 +33,6 @@ export default function Home() {
       </div>
       </section>
     </main>
+  </>
   );
 }

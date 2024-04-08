@@ -1,4 +1,4 @@
-"use client";
+
 import "@/app/globals.css";
 import NavbarComponent from "@/components/navbar/navigationBar";
 
@@ -21,8 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <header>
+      <body className="p-0 m-0">
+        <header className="fixed top-0 h-screen w-full">
           <NavbarComponent />
         </header>
         <main>{children}</main>

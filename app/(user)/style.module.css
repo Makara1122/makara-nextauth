@@ -1,5 +1,5 @@
 .container {
-    @apply max-w-md mx-auto  bg-white rounded-xl mt-48 shadow-md overflow-hidden md:max-w-2xl
+    @apply max-w-md mx-auto  hover:bg-slate-500 cursor-pointer bg-white rounded-xl mt-48 shadow-md overflow-hidden md:max-w-2xl
 }
 .flexContainer {
     @apply md:flex
